@@ -1,0 +1,3 @@
+[submodule "libs/devicetree"]
+	path = libs/devicetree
+	url = git@github.com:estebanwaseaten/devicetree.git
