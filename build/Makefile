@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/daniel/projects/testing/deltascope_cpp
+CMAKE_SOURCE_DIR = /home/wegkamp/development/lambdascope
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/daniel/projects/testing/deltascope_cpp/build
+CMAKE_BINARY_DIR = /home/wegkamp/development/lambdascope/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/daniel/projects/testing/deltascope_cpp/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/daniel/projects/testing/deltascope_cpp/build/CMakeFiles /home/daniel/projects/testing/deltascope_cpp/libs/raspi/build//CMakeFiles/progress.marks
-	cd /home/daniel/projects/testing/deltascope_cpp/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 /home/daniel/projects/testing/deltascope_cpp/libs/raspi/build/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/daniel/projects/testing/deltascope_cpp/build/CMakeFiles 0
+	cd /home/wegkamp/development/lambdascope/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/wegkamp/development/lambdascope/build/CMakeFiles /home/wegkamp/development/lambdascope/libs/raspi/build//CMakeFiles/progress.marks
+	cd /home/wegkamp/development/lambdascope/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 /home/wegkamp/development/lambdascope/libs/raspi/build/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wegkamp/development/lambdascope/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/daniel/projects/testing/deltascope_cpp/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 /home/daniel/projects/testing/deltascope_cpp/libs/raspi/build/clean
+	cd /home/wegkamp/development/lambdascope/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 /home/wegkamp/development/lambdascope/libs/raspi/build/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,31 +103,31 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/daniel/projects/testing/deltascope_cpp/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 /home/daniel/projects/testing/deltascope_cpp/libs/raspi/build/preinstall
+	cd /home/wegkamp/development/lambdascope/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 /home/wegkamp/development/lambdascope/libs/raspi/build/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/daniel/projects/testing/deltascope_cpp/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 /home/daniel/projects/testing/deltascope_cpp/libs/raspi/build/preinstall
+	cd /home/wegkamp/development/lambdascope/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 /home/wegkamp/development/lambdascope/libs/raspi/build/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/daniel/projects/testing/deltascope_cpp/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/wegkamp/development/lambdascope/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
-/home/daniel/projects/testing/deltascope_cpp/libs/raspi/build/CMakeFiles/raspi.dir/rule:
-	cd /home/daniel/projects/testing/deltascope_cpp/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 /home/daniel/projects/testing/deltascope_cpp/libs/raspi/build/CMakeFiles/raspi.dir/rule
-.PHONY : /home/daniel/projects/testing/deltascope_cpp/libs/raspi/build/CMakeFiles/raspi.dir/rule
+/home/wegkamp/development/lambdascope/libs/raspi/build/CMakeFiles/raspi.dir/rule:
+	cd /home/wegkamp/development/lambdascope/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 /home/wegkamp/development/lambdascope/libs/raspi/build/CMakeFiles/raspi.dir/rule
+.PHONY : /home/wegkamp/development/lambdascope/libs/raspi/build/CMakeFiles/raspi.dir/rule
 
 # Convenience name for target.
-raspi: /home/daniel/projects/testing/deltascope_cpp/libs/raspi/build/CMakeFiles/raspi.dir/rule
+raspi: /home/wegkamp/development/lambdascope/libs/raspi/build/CMakeFiles/raspi.dir/rule
 .PHONY : raspi
 
 # fast build rule for target.
 raspi/fast:
-	cd /home/daniel/projects/testing/deltascope_cpp/build && $(MAKE) $(MAKESILENT) -f /home/daniel/projects/testing/deltascope_cpp/libs/raspi/build/CMakeFiles/raspi.dir/build.make /home/daniel/projects/testing/deltascope_cpp/libs/raspi/build/CMakeFiles/raspi.dir/build
+	cd /home/wegkamp/development/lambdascope/build && $(MAKE) $(MAKESILENT) -f /home/wegkamp/development/lambdascope/libs/raspi/build/CMakeFiles/raspi.dir/build.make /home/wegkamp/development/lambdascope/libs/raspi/build/CMakeFiles/raspi.dir/build
 .PHONY : raspi/fast
 
 src/raspi.o: src/raspi.cpp.o
@@ -135,7 +135,7 @@ src/raspi.o: src/raspi.cpp.o
 
 # target to build an object file
 src/raspi.cpp.o:
-	cd /home/daniel/projects/testing/deltascope_cpp/build && $(MAKE) $(MAKESILENT) -f /home/daniel/projects/testing/deltascope_cpp/libs/raspi/build/CMakeFiles/raspi.dir/build.make /home/daniel/projects/testing/deltascope_cpp/libs/raspi/build/CMakeFiles/raspi.dir/src/raspi.cpp.o
+	cd /home/wegkamp/development/lambdascope/build && $(MAKE) $(MAKESILENT) -f /home/wegkamp/development/lambdascope/libs/raspi/build/CMakeFiles/raspi.dir/build.make /home/wegkamp/development/lambdascope/libs/raspi/build/CMakeFiles/raspi.dir/src/raspi.cpp.o
 .PHONY : src/raspi.cpp.o
 
 src/raspi.i: src/raspi.cpp.i
@@ -143,7 +143,7 @@ src/raspi.i: src/raspi.cpp.i
 
 # target to preprocess a source file
 src/raspi.cpp.i:
-	cd /home/daniel/projects/testing/deltascope_cpp/build && $(MAKE) $(MAKESILENT) -f /home/daniel/projects/testing/deltascope_cpp/libs/raspi/build/CMakeFiles/raspi.dir/build.make /home/daniel/projects/testing/deltascope_cpp/libs/raspi/build/CMakeFiles/raspi.dir/src/raspi.cpp.i
+	cd /home/wegkamp/development/lambdascope/build && $(MAKE) $(MAKESILENT) -f /home/wegkamp/development/lambdascope/libs/raspi/build/CMakeFiles/raspi.dir/build.make /home/wegkamp/development/lambdascope/libs/raspi/build/CMakeFiles/raspi.dir/src/raspi.cpp.i
 .PHONY : src/raspi.cpp.i
 
 src/raspi.s: src/raspi.cpp.s
@@ -151,7 +151,7 @@ src/raspi.s: src/raspi.cpp.s
 
 # target to generate assembly for a file
 src/raspi.cpp.s:
-	cd /home/daniel/projects/testing/deltascope_cpp/build && $(MAKE) $(MAKESILENT) -f /home/daniel/projects/testing/deltascope_cpp/libs/raspi/build/CMakeFiles/raspi.dir/build.make /home/daniel/projects/testing/deltascope_cpp/libs/raspi/build/CMakeFiles/raspi.dir/src/raspi.cpp.s
+	cd /home/wegkamp/development/lambdascope/build && $(MAKE) $(MAKESILENT) -f /home/wegkamp/development/lambdascope/libs/raspi/build/CMakeFiles/raspi.dir/build.make /home/wegkamp/development/lambdascope/libs/raspi/build/CMakeFiles/raspi.dir/src/raspi.cpp.s
 .PHONY : src/raspi.cpp.s
 
 src/raspi_gpio_bcm2835.o: src/raspi_gpio_bcm2835.cpp.o
@@ -159,7 +159,7 @@ src/raspi_gpio_bcm2835.o: src/raspi_gpio_bcm2835.cpp.o
 
 # target to build an object file
 src/raspi_gpio_bcm2835.cpp.o:
-	cd /home/daniel/projects/testing/deltascope_cpp/build && $(MAKE) $(MAKESILENT) -f /home/daniel/projects/testing/deltascope_cpp/libs/raspi/build/CMakeFiles/raspi.dir/build.make /home/daniel/projects/testing/deltascope_cpp/libs/raspi/build/CMakeFiles/raspi.dir/src/raspi_gpio_bcm2835.cpp.o
+	cd /home/wegkamp/development/lambdascope/build && $(MAKE) $(MAKESILENT) -f /home/wegkamp/development/lambdascope/libs/raspi/build/CMakeFiles/raspi.dir/build.make /home/wegkamp/development/lambdascope/libs/raspi/build/CMakeFiles/raspi.dir/src/raspi_gpio_bcm2835.cpp.o
 .PHONY : src/raspi_gpio_bcm2835.cpp.o
 
 src/raspi_gpio_bcm2835.i: src/raspi_gpio_bcm2835.cpp.i
@@ -167,7 +167,7 @@ src/raspi_gpio_bcm2835.i: src/raspi_gpio_bcm2835.cpp.i
 
 # target to preprocess a source file
 src/raspi_gpio_bcm2835.cpp.i:
-	cd /home/daniel/projects/testing/deltascope_cpp/build && $(MAKE) $(MAKESILENT) -f /home/daniel/projects/testing/deltascope_cpp/libs/raspi/build/CMakeFiles/raspi.dir/build.make /home/daniel/projects/testing/deltascope_cpp/libs/raspi/build/CMakeFiles/raspi.dir/src/raspi_gpio_bcm2835.cpp.i
+	cd /home/wegkamp/development/lambdascope/build && $(MAKE) $(MAKESILENT) -f /home/wegkamp/development/lambdascope/libs/raspi/build/CMakeFiles/raspi.dir/build.make /home/wegkamp/development/lambdascope/libs/raspi/build/CMakeFiles/raspi.dir/src/raspi_gpio_bcm2835.cpp.i
 .PHONY : src/raspi_gpio_bcm2835.cpp.i
 
 src/raspi_gpio_bcm2835.s: src/raspi_gpio_bcm2835.cpp.s
@@ -175,7 +175,7 @@ src/raspi_gpio_bcm2835.s: src/raspi_gpio_bcm2835.cpp.s
 
 # target to generate assembly for a file
 src/raspi_gpio_bcm2835.cpp.s:
-	cd /home/daniel/projects/testing/deltascope_cpp/build && $(MAKE) $(MAKESILENT) -f /home/daniel/projects/testing/deltascope_cpp/libs/raspi/build/CMakeFiles/raspi.dir/build.make /home/daniel/projects/testing/deltascope_cpp/libs/raspi/build/CMakeFiles/raspi.dir/src/raspi_gpio_bcm2835.cpp.s
+	cd /home/wegkamp/development/lambdascope/build && $(MAKE) $(MAKESILENT) -f /home/wegkamp/development/lambdascope/libs/raspi/build/CMakeFiles/raspi.dir/build.make /home/wegkamp/development/lambdascope/libs/raspi/build/CMakeFiles/raspi.dir/src/raspi_gpio_bcm2835.cpp.s
 .PHONY : src/raspi_gpio_bcm2835.cpp.s
 
 src/raspi_gpio_dwapbssi.o: src/raspi_gpio_dwapbssi.cpp.o
@@ -183,7 +183,7 @@ src/raspi_gpio_dwapbssi.o: src/raspi_gpio_dwapbssi.cpp.o
 
 # target to build an object file
 src/raspi_gpio_dwapbssi.cpp.o:
-	cd /home/daniel/projects/testing/deltascope_cpp/build && $(MAKE) $(MAKESILENT) -f /home/daniel/projects/testing/deltascope_cpp/libs/raspi/build/CMakeFiles/raspi.dir/build.make /home/daniel/projects/testing/deltascope_cpp/libs/raspi/build/CMakeFiles/raspi.dir/src/raspi_gpio_dwapbssi.cpp.o
+	cd /home/wegkamp/development/lambdascope/build && $(MAKE) $(MAKESILENT) -f /home/wegkamp/development/lambdascope/libs/raspi/build/CMakeFiles/raspi.dir/build.make /home/wegkamp/development/lambdascope/libs/raspi/build/CMakeFiles/raspi.dir/src/raspi_gpio_dwapbssi.cpp.o
 .PHONY : src/raspi_gpio_dwapbssi.cpp.o
 
 src/raspi_gpio_dwapbssi.i: src/raspi_gpio_dwapbssi.cpp.i
@@ -191,7 +191,7 @@ src/raspi_gpio_dwapbssi.i: src/raspi_gpio_dwapbssi.cpp.i
 
 # target to preprocess a source file
 src/raspi_gpio_dwapbssi.cpp.i:
-	cd /home/daniel/projects/testing/deltascope_cpp/build && $(MAKE) $(MAKESILENT) -f /home/daniel/projects/testing/deltascope_cpp/libs/raspi/build/CMakeFiles/raspi.dir/build.make /home/daniel/projects/testing/deltascope_cpp/libs/raspi/build/CMakeFiles/raspi.dir/src/raspi_gpio_dwapbssi.cpp.i
+	cd /home/wegkamp/development/lambdascope/build && $(MAKE) $(MAKESILENT) -f /home/wegkamp/development/lambdascope/libs/raspi/build/CMakeFiles/raspi.dir/build.make /home/wegkamp/development/lambdascope/libs/raspi/build/CMakeFiles/raspi.dir/src/raspi_gpio_dwapbssi.cpp.i
 .PHONY : src/raspi_gpio_dwapbssi.cpp.i
 
 src/raspi_gpio_dwapbssi.s: src/raspi_gpio_dwapbssi.cpp.s
@@ -199,7 +199,7 @@ src/raspi_gpio_dwapbssi.s: src/raspi_gpio_dwapbssi.cpp.s
 
 # target to generate assembly for a file
 src/raspi_gpio_dwapbssi.cpp.s:
-	cd /home/daniel/projects/testing/deltascope_cpp/build && $(MAKE) $(MAKESILENT) -f /home/daniel/projects/testing/deltascope_cpp/libs/raspi/build/CMakeFiles/raspi.dir/build.make /home/daniel/projects/testing/deltascope_cpp/libs/raspi/build/CMakeFiles/raspi.dir/src/raspi_gpio_dwapbssi.cpp.s
+	cd /home/wegkamp/development/lambdascope/build && $(MAKE) $(MAKESILENT) -f /home/wegkamp/development/lambdascope/libs/raspi/build/CMakeFiles/raspi.dir/build.make /home/wegkamp/development/lambdascope/libs/raspi/build/CMakeFiles/raspi.dir/src/raspi_gpio_dwapbssi.cpp.s
 .PHONY : src/raspi_gpio_dwapbssi.cpp.s
 
 src/raspi_spi_bcm2835.o: src/raspi_spi_bcm2835.cpp.o
@@ -207,7 +207,7 @@ src/raspi_spi_bcm2835.o: src/raspi_spi_bcm2835.cpp.o
 
 # target to build an object file
 src/raspi_spi_bcm2835.cpp.o:
-	cd /home/daniel/projects/testing/deltascope_cpp/build && $(MAKE) $(MAKESILENT) -f /home/daniel/projects/testing/deltascope_cpp/libs/raspi/build/CMakeFiles/raspi.dir/build.make /home/daniel/projects/testing/deltascope_cpp/libs/raspi/build/CMakeFiles/raspi.dir/src/raspi_spi_bcm2835.cpp.o
+	cd /home/wegkamp/development/lambdascope/build && $(MAKE) $(MAKESILENT) -f /home/wegkamp/development/lambdascope/libs/raspi/build/CMakeFiles/raspi.dir/build.make /home/wegkamp/development/lambdascope/libs/raspi/build/CMakeFiles/raspi.dir/src/raspi_spi_bcm2835.cpp.o
 .PHONY : src/raspi_spi_bcm2835.cpp.o
 
 src/raspi_spi_bcm2835.i: src/raspi_spi_bcm2835.cpp.i
@@ -215,7 +215,7 @@ src/raspi_spi_bcm2835.i: src/raspi_spi_bcm2835.cpp.i
 
 # target to preprocess a source file
 src/raspi_spi_bcm2835.cpp.i:
-	cd /home/daniel/projects/testing/deltascope_cpp/build && $(MAKE) $(MAKESILENT) -f /home/daniel/projects/testing/deltascope_cpp/libs/raspi/build/CMakeFiles/raspi.dir/build.make /home/daniel/projects/testing/deltascope_cpp/libs/raspi/build/CMakeFiles/raspi.dir/src/raspi_spi_bcm2835.cpp.i
+	cd /home/wegkamp/development/lambdascope/build && $(MAKE) $(MAKESILENT) -f /home/wegkamp/development/lambdascope/libs/raspi/build/CMakeFiles/raspi.dir/build.make /home/wegkamp/development/lambdascope/libs/raspi/build/CMakeFiles/raspi.dir/src/raspi_spi_bcm2835.cpp.i
 .PHONY : src/raspi_spi_bcm2835.cpp.i
 
 src/raspi_spi_bcm2835.s: src/raspi_spi_bcm2835.cpp.s
@@ -223,7 +223,7 @@ src/raspi_spi_bcm2835.s: src/raspi_spi_bcm2835.cpp.s
 
 # target to generate assembly for a file
 src/raspi_spi_bcm2835.cpp.s:
-	cd /home/daniel/projects/testing/deltascope_cpp/build && $(MAKE) $(MAKESILENT) -f /home/daniel/projects/testing/deltascope_cpp/libs/raspi/build/CMakeFiles/raspi.dir/build.make /home/daniel/projects/testing/deltascope_cpp/libs/raspi/build/CMakeFiles/raspi.dir/src/raspi_spi_bcm2835.cpp.s
+	cd /home/wegkamp/development/lambdascope/build && $(MAKE) $(MAKESILENT) -f /home/wegkamp/development/lambdascope/libs/raspi/build/CMakeFiles/raspi.dir/build.make /home/wegkamp/development/lambdascope/libs/raspi/build/CMakeFiles/raspi.dir/src/raspi_spi_bcm2835.cpp.s
 .PHONY : src/raspi_spi_bcm2835.cpp.s
 
 src/raspi_spi_dwapbssi.o: src/raspi_spi_dwapbssi.cpp.o
@@ -231,7 +231,7 @@ src/raspi_spi_dwapbssi.o: src/raspi_spi_dwapbssi.cpp.o
 
 # target to build an object file
 src/raspi_spi_dwapbssi.cpp.o:
-	cd /home/daniel/projects/testing/deltascope_cpp/build && $(MAKE) $(MAKESILENT) -f /home/daniel/projects/testing/deltascope_cpp/libs/raspi/build/CMakeFiles/raspi.dir/build.make /home/daniel/projects/testing/deltascope_cpp/libs/raspi/build/CMakeFiles/raspi.dir/src/raspi_spi_dwapbssi.cpp.o
+	cd /home/wegkamp/development/lambdascope/build && $(MAKE) $(MAKESILENT) -f /home/wegkamp/development/lambdascope/libs/raspi/build/CMakeFiles/raspi.dir/build.make /home/wegkamp/development/lambdascope/libs/raspi/build/CMakeFiles/raspi.dir/src/raspi_spi_dwapbssi.cpp.o
 .PHONY : src/raspi_spi_dwapbssi.cpp.o
 
 src/raspi_spi_dwapbssi.i: src/raspi_spi_dwapbssi.cpp.i
@@ -239,7 +239,7 @@ src/raspi_spi_dwapbssi.i: src/raspi_spi_dwapbssi.cpp.i
 
 # target to preprocess a source file
 src/raspi_spi_dwapbssi.cpp.i:
-	cd /home/daniel/projects/testing/deltascope_cpp/build && $(MAKE) $(MAKESILENT) -f /home/daniel/projects/testing/deltascope_cpp/libs/raspi/build/CMakeFiles/raspi.dir/build.make /home/daniel/projects/testing/deltascope_cpp/libs/raspi/build/CMakeFiles/raspi.dir/src/raspi_spi_dwapbssi.cpp.i
+	cd /home/wegkamp/development/lambdascope/build && $(MAKE) $(MAKESILENT) -f /home/wegkamp/development/lambdascope/libs/raspi/build/CMakeFiles/raspi.dir/build.make /home/wegkamp/development/lambdascope/libs/raspi/build/CMakeFiles/raspi.dir/src/raspi_spi_dwapbssi.cpp.i
 .PHONY : src/raspi_spi_dwapbssi.cpp.i
 
 src/raspi_spi_dwapbssi.s: src/raspi_spi_dwapbssi.cpp.s
@@ -247,7 +247,7 @@ src/raspi_spi_dwapbssi.s: src/raspi_spi_dwapbssi.cpp.s
 
 # target to generate assembly for a file
 src/raspi_spi_dwapbssi.cpp.s:
-	cd /home/daniel/projects/testing/deltascope_cpp/build && $(MAKE) $(MAKESILENT) -f /home/daniel/projects/testing/deltascope_cpp/libs/raspi/build/CMakeFiles/raspi.dir/build.make /home/daniel/projects/testing/deltascope_cpp/libs/raspi/build/CMakeFiles/raspi.dir/src/raspi_spi_dwapbssi.cpp.s
+	cd /home/wegkamp/development/lambdascope/build && $(MAKE) $(MAKESILENT) -f /home/wegkamp/development/lambdascope/libs/raspi/build/CMakeFiles/raspi.dir/build.make /home/wegkamp/development/lambdascope/libs/raspi/build/CMakeFiles/raspi.dir/src/raspi_spi_dwapbssi.cpp.s
 .PHONY : src/raspi_spi_dwapbssi.cpp.s
 
 # Help Target
@@ -285,6 +285,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/daniel/projects/testing/deltascope_cpp/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/wegkamp/development/lambdascope/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -55,6 +55,12 @@ enum SoC {  // P[0]="2835"; P[1]="836"; P[2]="2837"; P[3]="2711"
   bcm2712           //raspi5
 };
 
+enum spiHandles {
+    SPI_HANDLE_NONE,
+    SPI_HANDLE_A,
+    SPI_HANDLE_B
+};
+
 int getSOC();
 
 
@@ -79,6 +85,7 @@ public:
     void        close_spidev();
     void        setSpeed( uint32_t speed_Hz ); //needed?
     void        setSpiTransferStruct();
+    int         spidev_set_handle( int handle );
 
     int         spiTransfer( uint8_t *bytes, uint32_t byteCount );
     int         pioctl( int deviceIndex, uint64_t cmd, void *arg );  //communication forwarded to the device
@@ -106,9 +113,10 @@ private:
     // using spidev:
     int spi_handle_A;
     int spi_handle_B;
+    int spi_handle_select;
 
     const char *devicePathA = "/dev/spidev0.0";			//device path     could change depending on...
-    const char *devicePathB = "/dev/spidev0.1";			//device path to the other chip select/enable of
+    const char *devicePathB = "/dev/spidev1.0";			//device path to the other chip select/enable of
 
     uint8_t mode = SPI_MODE_0;
     uint32_t speed = 1600000;		// maximum: 10.000.000		--> transfer rate of  931,51 kbytes/s	(only for selftest)

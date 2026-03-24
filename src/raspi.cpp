@@ -106,6 +106,43 @@ raspi_info::~raspi_info()
     }
 }
 
+int raspi_info::spidev_set_handle( int handle )
+{
+    if( handle == SPI_HANDLE_A )
+    {
+        if( spi_handle_A < 0 ) //not valid
+        {
+            return -1;
+        }
+        else
+        {
+            cout << "*** spidev set to handle A" << endl;
+            spi_handle_select = spi_handle_A;
+            spi_valid = true;
+        }
+    }
+    else if( handle == SPI_HANDLE_B )
+    {
+        if ( spi_handle_B < 0 ) //not valid
+        {
+            return -1;
+        }
+        else
+        {
+            cout << "*** spidev set to handle B" << endl;
+            spi_handle_select = spi_handle_B;
+            spi_valid = true;
+        }
+    }
+    else
+    {
+        cout << "*** spidev set to handle NONE" << endl;
+        spi_handle_select = -1;
+        spi_valid = false;
+    }
+    return 0;
+}
+
 void raspi_info::init_spidev()
 {
 	spi_handle_A = open( devicePathA, O_RDWR );
@@ -114,12 +151,15 @@ void raspi_info::init_spidev()
     spi_handle_B = open( devicePathB, O_RDWR );
     cout << "*** fopen B response: " << spi_handle_B << endl;
 
+    spi_handle_select = spi_handle_A;
 	if( spi_handle_A < 0 )
 	{
 			cout << "could not open SPI device A" << endl;
+            spi_handle_select = spi_handle_B;
 			if( spi_handle_B < 0 )
 			{
 				cout << "could not open SPI device B" << endl;
+                spi_handle_select = -1;
 			}
 			spi_valid = false;
 			return;
@@ -252,6 +292,7 @@ void raspi_info::setSpiTransferStruct()
 
 int raspi_info::spiTransfer( uint8_t *bytes, uint32_t byteCount )
 {
+
     mySpiTransfer.tx_buf = (uint64_t)bytes;
     mySpiTransfer.rx_buf = (uint64_t)bytes;
     mySpiTransfer.len = byteCount;
@@ -262,7 +303,7 @@ int raspi_info::spiTransfer( uint8_t *bytes, uint32_t byteCount )
             return myDevices[spi_devnum-1]->pioctl( SPI_IOC_MESSAGE(1), &mySpiTransfer );
             break;
         case RASPI_SPI_METHOD_SPIDEV:
-            return ioctl(spi_handle_A, SPI_IOC_MESSAGE(1), &mySpiTransfer);
+            return ioctl(spi_handle_select, SPI_IOC_MESSAGE(1), &mySpiTransfer);
             break;
         case RASPI_SPI_METHOD_NONE:
         default:

@@ -1,5 +1,5 @@
-/home/daniel/projects/testing/deltascope_cpp/libs/raspi/build/CMakeFiles/raspi.dir/src/raspi.cpp.o: \
- /home/daniel/projects/testing/deltascope_cpp/libs/raspi/src/raspi.cpp \
+/home/wegkamp/development/lambdascope/libs/raspi/build/CMakeFiles/raspi.dir/src/raspi.cpp.o: \
+ /home/wegkamp/development/lambdascope/libs/raspi/src/raspi.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/12/iostream \
  /usr/include/aarch64-linux-gnu/c++/12/bits/c++config.h \
  /usr/include/aarch64-linux-gnu/c++/12/bits/os_defines.h \
@@ -165,7 +165,7 @@
  /usr/include/aarch64-linux-gnu/bits/getopt_core.h \
  /usr/include/aarch64-linux-gnu/bits/unistd_ext.h \
  /usr/include/linux/close_range.h \
- /home/daniel/projects/testing/deltascope_cpp/libs/raspi/include/raspi/raspi.h \
+ /home/wegkamp/development/lambdascope/libs/raspi/include/raspi/raspi.h \
  /usr/include/c++/12/filesystem /usr/include/c++/12/bits/fs_fwd.h \
  /usr/include/c++/12/bits/chrono.h /usr/include/c++/12/ratio \
  /usr/include/c++/12/limits /usr/include/c++/12/ctime \
@@ -210,10 +210,10 @@
  /usr/include/aarch64-linux-gnu/bits/mman-linux.h \
  /usr/include/aarch64-linux-gnu/bits/mman-shared.h \
  /usr/include/aarch64-linux-gnu/bits/mman_ext.h \
- /home/daniel/projects/testing/deltascope_cpp/libs/raspi/libs/devicetree/include/devicetree/devicetree.h \
- /home/daniel/projects/testing/deltascope_cpp/libs/raspi/libs/devicetree/include/devicetree/uint_large.h \
- /home/daniel/projects/testing/deltascope_cpp/libs/raspi/src/raspi_spi_dwapbssi.h \
- /home/daniel/projects/testing/deltascope_cpp/libs/raspi/include/raspi/raspi_spi.h \
- /home/daniel/projects/testing/deltascope_cpp/libs/raspi/src/raspi_spi_bcm2835.h \
- /home/daniel/projects/testing/deltascope_cpp/libs/raspi/src/raspi_gpio_dwapbssi.h \
- /home/daniel/projects/testing/deltascope_cpp/libs/raspi/src/raspi_gpio_bcm2835.h
+ /home/wegkamp/development/lambdascope/libs/raspi/libs/devicetree/include/devicetree/devicetree.h \
+ /home/wegkamp/development/lambdascope/libs/raspi/libs/devicetree/include/devicetree/uint_large.h \
+ /home/wegkamp/development/lambdascope/libs/raspi/src/raspi_spi_dwapbssi.h \
+ /home/wegkamp/development/lambdascope/libs/raspi/include/raspi/raspi_spi.h \
+ /home/wegkamp/development/lambdascope/libs/raspi/src/raspi_spi_bcm2835.h \
+ /home/wegkamp/development/lambdascope/libs/raspi/src/raspi_gpio_dwapbssi.h \
+ /home/wegkamp/development/lambdascope/libs/raspi/src/raspi_gpio_bcm2835.h

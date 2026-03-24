@@ -1,8 +1,8 @@
-/home/daniel/projects/testing/deltascope_cpp/libs/raspi/build/CMakeFiles/raspi.dir/src/raspi_gpio_dwapbssi.cpp.o: \
- /home/daniel/projects/testing/deltascope_cpp/libs/raspi/src/raspi_gpio_dwapbssi.cpp \
+/home/wegkamp/development/lambdascope/libs/raspi/build/CMakeFiles/raspi.dir/src/raspi_gpio_dwapbssi.cpp.o: \
+ /home/wegkamp/development/lambdascope/libs/raspi/src/raspi_gpio_dwapbssi.cpp \
  /usr/include/stdc-predef.h \
- /home/daniel/projects/testing/deltascope_cpp/libs/raspi/src/raspi_gpio_dwapbssi.h \
- /home/daniel/projects/testing/deltascope_cpp/libs/raspi/libs/devicetree/include/devicetree/devicetree.h \
+ /home/wegkamp/development/lambdascope/libs/raspi/src/raspi_gpio_dwapbssi.h \
+ /home/wegkamp/development/lambdascope/libs/raspi/libs/devicetree/include/devicetree/devicetree.h \
  /usr/include/c++/12/filesystem /usr/include/c++/12/bits/fs_fwd.h \
  /usr/include/c++/12/system_error \
  /usr/include/aarch64-linux-gnu/c++/12/bits/c++config.h \
@@ -183,5 +183,5 @@
  /usr/include/aarch64-linux-gnu/bits/mman-linux.h \
  /usr/include/aarch64-linux-gnu/bits/mman-shared.h \
  /usr/include/aarch64-linux-gnu/bits/mman_ext.h \
- /home/daniel/projects/testing/deltascope_cpp/libs/raspi/libs/devicetree/include/devicetree/uint_large.h \
+ /home/wegkamp/development/lambdascope/libs/raspi/libs/devicetree/include/devicetree/uint_large.h \
  /usr/include/c++/12/iostream

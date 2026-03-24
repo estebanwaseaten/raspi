@@ -1,4 +1,4 @@
-# Install script for directory: /home/daniel/projects/testing/deltascope_cpp/libs/raspi
+# Install script for directory: /home/wegkamp/development/lambdascope/libs/raspi
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,7 +44,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/daniel/projects/testing/deltascope_cpp/libs/raspi/libs/devicetree/build/cmake_install.cmake")
+  include("/home/wegkamp/development/lambdascope/libs/raspi/libs/devicetree/build/cmake_install.cmake")
 
 endif()
 

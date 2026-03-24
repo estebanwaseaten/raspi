@@ -1,8 +1,8 @@
-/home/daniel/projects/testing/deltascope_cpp/libs/raspi/build/CMakeFiles/raspi.dir/src/raspi_spi_dwapbssi.cpp.o: \
- /home/daniel/projects/testing/deltascope_cpp/libs/raspi/src/raspi_spi_dwapbssi.cpp \
+/home/wegkamp/development/lambdascope/libs/raspi/build/CMakeFiles/raspi.dir/src/raspi_spi_dwapbssi.cpp.o: \
+ /home/wegkamp/development/lambdascope/libs/raspi/src/raspi_spi_dwapbssi.cpp \
  /usr/include/stdc-predef.h \
- /home/daniel/projects/testing/deltascope_cpp/libs/raspi/src/raspi_spi_dwapbssi.h \
- /home/daniel/projects/testing/deltascope_cpp/libs/raspi/libs/devicetree/include/devicetree/devicetree.h \
+ /home/wegkamp/development/lambdascope/libs/raspi/src/raspi_spi_dwapbssi.h \
+ /home/wegkamp/development/lambdascope/libs/raspi/libs/devicetree/include/devicetree/devicetree.h \
  /usr/include/c++/12/filesystem /usr/include/c++/12/bits/fs_fwd.h \
  /usr/include/c++/12/system_error \
  /usr/include/aarch64-linux-gnu/c++/12/bits/c++config.h \
@@ -183,12 +183,12 @@
  /usr/include/aarch64-linux-gnu/bits/mman-linux.h \
  /usr/include/aarch64-linux-gnu/bits/mman-shared.h \
  /usr/include/aarch64-linux-gnu/bits/mman_ext.h \
- /home/daniel/projects/testing/deltascope_cpp/libs/raspi/libs/devicetree/include/devicetree/uint_large.h \
+ /home/wegkamp/development/lambdascope/libs/raspi/libs/devicetree/include/devicetree/uint_large.h \
  /usr/include/c++/12/iostream \
- /home/daniel/projects/testing/deltascope_cpp/libs/raspi/include/raspi/raspi_spi.h \
+ /home/wegkamp/development/lambdascope/libs/raspi/include/raspi/raspi_spi.h \
  /usr/include/linux/ioctl.h /usr/lib/linux/uapi/arm64/asm/ioctl.h \
  /usr/include/asm-generic/ioctl.h /usr/lib/linux/uapi/arm64/asm/types.h \
  /usr/include/asm-generic/types.h /usr/include/asm-generic/int-ll64.h \
  /usr/lib/linux/uapi/arm64/asm/bitsperlong.h \
  /usr/include/asm-generic/bitsperlong.h \
- /home/daniel/projects/testing/deltascope_cpp/libs/raspi/src/raspi_spi_dwapbssi_regs.h
+ /home/wegkamp/development/lambdascope/libs/raspi/src/raspi_spi_dwapbssi_regs.h

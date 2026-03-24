@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/daniel/projects/testing/deltascope_cpp/libs/raspi/libraspi.pdb"
-  "/home/daniel/projects/testing/deltascope_cpp/libs/raspi/libraspi.so"
+  "/home/wegkamp/development/lambdascope/libs/raspi/libraspi.pdb"
+  "/home/wegkamp/development/lambdascope/libs/raspi/libraspi.so"
   "CMakeFiles/raspi.dir/src/raspi.cpp.o"
   "CMakeFiles/raspi.dir/src/raspi.cpp.o.d"
   "CMakeFiles/raspi.dir/src/raspi_gpio_bcm2835.cpp.o"
